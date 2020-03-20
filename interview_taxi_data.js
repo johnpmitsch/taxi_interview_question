@@ -16,7 +16,7 @@ const taxiData = require("./taxi_data_01_2019_short.json")
  */ 
  
 /**
- * Write a function find how many rides with 2 passengers (passenger_count) gave a tip (tip_amount)?
+ * Write a function finding how many rides with a certain amout of passengers (passenger_count) gave a tip (tip_amount)?
  */
 
 const passengerAmountTip = (passengerCount) => {
