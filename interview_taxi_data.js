@@ -9,7 +9,7 @@ const taxiData = require("./taxi_data_01_2019_short.json")
  *
  * (there will be tests on the coderpad, but none here yet)
  *   
- * Looking for
+ * Interviewer is looking for
  * - Basic coding principles
  * - Knowledge of JS std library
  * - Efficency looping through data
@@ -20,29 +20,14 @@ const taxiData = require("./taxi_data_01_2019_short.json")
  */
 
 const passengerAmountTip = (passengerCount) => {
-  count = 0
-  taxiData.map(ride => {
-    if (ride.passenger_count === passengerCount && ride.tip_amount > 0) {
-      count += 1;
-    }
-  });
-  return count;
 }
-
-// 152
 
 
 /**
  * Can you write a function that returns the furthest ride taken (trip_distance) for a given amount of passengers (passenger_count)? 
  * If there are no rides for the amount of passengers, the function should return null.
  */
-
 const furthestRide = (passengerCount) => {
-  let count = 0
-  ridesForPassenger = taxiData.filter(ride => ride.passenger_count === passengerCount)
-  if (!ridesForPassenger) return null
-  const distances = ridesForPassenger.map(ride => ride.trip_distance)
-  return Math.max(...distances);
 }
 
 
@@ -54,11 +39,6 @@ const furthestRide = (passengerCount) => {
  *
  * The range should be inclusive, in this example both 2.0 and 3.0 miles are included.
  * You do not have to round the result to 2 decimal places
-*/
-
+ */
 const averageTip = (start, end) => {
-  const ridesInRange = taxiData.filter(ride => ride.trip_distance >= start && ride.trip_distance <= end)
-  let sum = 0.0;
-  ridesInRange.map(ride => sum += Number(ride.tip_amount));
-  return sum / ridesInRange.length;
 }
