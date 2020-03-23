@@ -1,0 +1,24 @@
+{
+  "name": "taxi_interview_question",
+  "version": "1.0.0",
+  "description": "`taxi_data_01_2019_short.json` is a shortened dataset of the Janurary 2019 taxi rides in NYC. There are questions in `interview_taxi_data.js` to answer about this dataset.",
+  "main": "interview_taxi_data.js",
+  "scripts": {
+    "test": "mocha taxi_questions.js",
+    "start": "node ./taxi_questions.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpmitsch/taxi_interview_question.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnpmitsch/taxi_interview_question/issues"
+  },
+  "homepage": "https://github.com/johnpmitsch/taxi_interview_question#readme",
+  "dependencies": {
+    "mocha": "^7.1.1"
+  }
+}
