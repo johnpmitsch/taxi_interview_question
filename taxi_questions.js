@@ -30,6 +30,7 @@
 GUIDELINES:
  - You can use google and documentation as reference
  - You can run the code and the tests as many times as needed
+ - Output of executed code will show to the right, be sure to be scrolled down all the way when running the code.
  - Ask questions if you are not sure about something in the question or the coderpad environment
  - Work as you would normally work
 */
@@ -77,15 +78,14 @@ const RUN_QUESTION_TWO_TESTS = false
 
 
 /*
-  Write a function to show the average tip (tip_amount) for a particular trip distance range (trip_distance)
+  QUESTION 3: Write a function to show the average tip (tip_amount) for a particular trip distance range (trip_distance)
   If no rides are within that range, return null
 
   For Example:
   averageTip(2, 3) would return the average tip for rides with distances between 2 miles to 3 miles.
 
   The range should be inclusive, in this example both 2.0 and 3.0 miles are included.
-  You do not have to round the result to 2 decimal places, but the tests can account for rounded answers too.
-
+  You do not have to round the result to 2 decimal places, but rounded answers are accepted too.
 */
 const averageTip = (start, end) => {
   // fill in here
@@ -96,7 +96,6 @@ const averageTip = (start, end) => {
   There is no penalty for failed tests so feel free to run the tests as many times as you would like.
 */
 const RUN_QUESTION_THREE_TESTS = false
-
 
 ///////////////////////////// TESTS /////////////////////////////
 
