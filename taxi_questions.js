@@ -30,7 +30,7 @@
 GUIDELINES:
  - You can use google and documentation as reference
  - You can run the code and the tests as many times as needed
- - Output of executed code will show to the right, be sure to be scrolled down all the way when running the code.
+ - Output of executed code will show to the right. Scroll down all the way when running the code to see the results.
  - Ask questions if you are not sure about something in the question or the coderpad environment
  - Work as you would normally work
 */
@@ -82,12 +82,12 @@ const RUN_QUESTION_TWO_TESTS = false
   If no rides are within that range, return null
 
   For Example:
-  averageTip(2, 3) would return the average tip for rides with distances between 2 miles to 3 miles.
+  averageTipForRange(2, 3) would return the average tip for rides with distances between 2 miles to 3 miles.
 
   The range should be inclusive, in this example both 2.0 and 3.0 miles are included.
   You do not have to round the result to 2 decimal places, but rounded answers are accepted too.
 */
-const averageTip = (start, end) => {
+const averageTipForRange = (min, max) => {
   // fill in here
 }
 
@@ -147,21 +147,21 @@ if (RUN_QUESTION_TWO_TESTS) {
 }
 
 if (RUN_QUESTION_THREE_TESTS) {
-  describe('averageTip', function() {
+  describe('averageTipForRange', function() {
     it('returns correctly for 1 to 2', function() {
-      assert.equal(averageTip(1,2).toFixed(2), 1.2425236593059938.toFixed(2));
+      assert.equal(averageTipForRange(1,2).toFixed(2), 1.2425236593059938.toFixed(2));
     })
     it('returns correctly for 2 to 3', function() {
-      assert.equal(averageTip(2,3).toFixed(2), 1.675194805194805.toFixed(2));
+      assert.equal(averageTipForRange(2,3).toFixed(2), 1.675194805194805.toFixed(2));
     })
     it('returns correctly for 10 to 15', function() {
-      assert.equal(averageTip(10,15).toFixed(2), 4.30157894736842.toFixed(2));
+      assert.equal(averageTipForRange(10,15).toFixed(2), 4.30157894736842.toFixed(2));
     })
     it('returns correctly for 1 to 100', function() {
-      assert.equal(averageTip(1,100).toFixed(2), 1.9075880052151228.toFixed(2));
+      assert.equal(averageTipForRange(1,100).toFixed(2), 1.9075880052151228.toFixed(2));
     })
     it('returns null for invalid selection', function() {
-      assert.equal(averageTip(999,1000), null);
+      assert.equal(averageTipForRange(999,1000), null);
     })
   })
 }
